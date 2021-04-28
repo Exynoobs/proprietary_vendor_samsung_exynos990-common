@@ -78,15 +78,15 @@ Telekom HU"THU
 
 21901HT HR"HT HR
 
-21902Tele2 HR"Tele2 HR
+21902Telemach"Telemach
 
 21910A1 HR"A1 HR
 
 22001Telenor SRB"Telenor
 
 22003mt:s"MTS
-
-22005Vip SRB"Vip SRB
+
+22005A1 SRB"A1 SRB
 
 22101vala"vala
 
@@ -440,6 +440,8 @@ Telekom.me"T.me
 
 30801
 SPM AMERIS"AMERIS
+
+30803SPM Telecom"SPM
 *
 310020US - Union Telephone"UnionTel
 
@@ -498,8 +500,8 @@ SPM AMERIS"AMERIS
 310380AT&T"AT&T
 
 310410AT&T"AT&T
-*
-310450Cell One of NE Colorado"NECCI
+#
+310450Viaero Wireless"Viaero
 
 310460USA1L"USA1L
  
@@ -518,8 +520,6 @@ SPM AMERIS"AMERIS
 310690Limitless Mobile"LMUSA
 
 310730U.S.Cellular"USCC
-
-310740USA OTZ"OTZ
 "
 310770Iowa Wireless USA"IWS
 
@@ -550,6 +550,8 @@ SPM AMERIS"AMERIS
 311480Verizon"Verizon
 
 311530USANW"USANW
+
+311560USA OTZ"OTZ
 
 311580U.S.Cellular"USCC
 #
@@ -1735,6 +1737,8 @@ TelkomSA-R"Telkom-R
 65801Sure"Sure
 
 65902MTN"MTN
+
+65905Digitel"DT-SSD
 
 65906ZAIN SS"ZAIN SS
 
@@ -1855,6 +1859,8 @@ TelkomSA-R"Telkom-R
 732130Avantel"Avantel
 
 732187ETB 4G"ETB
+
+732360WOM"WOM
 
 73402DIGITEL"DIGITEL
 
@@ -1913,4 +1919,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML&Published TS.25 Database 01 March 2021
+90150EchoStar Mobile"EML&Published TS.25 Database 12 April 2021
