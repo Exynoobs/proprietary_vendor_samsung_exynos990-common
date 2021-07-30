@@ -481,4 +481,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider@4.0-impl \
-    libskeymaster4device
+    libskeymaster4device \
+    manifest_android.hardware.drm@1.3-service.widevine
