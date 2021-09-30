@@ -161,7 +161,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/gralloc.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.exynos990.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/hwcomposer.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.exynos990.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/memtrack.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.exynos990.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/sound_trigger.primary.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.exynos990.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosHWCService.so \
@@ -304,7 +303,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/gralloc.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.exynos990.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/hwcomposer.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.exynos990.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/memtrack.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.exynos990.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so \
