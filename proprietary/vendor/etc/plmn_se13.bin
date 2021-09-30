@@ -69,8 +69,8 @@ Telenor HU"TelenorH
 Telekom HU"THU
 
 21670vodafone HU"voda HU
-
-21803	HT ERONET"HTERONET
+
+21803ERONET"ERONET
 
 21805m:tel"m:tel
 
@@ -172,9 +172,6 @@ Telenor DK"TelenoDK
 23820Telia DK"Telia
 "
 23866Telia-Telenor DK"TT DK
-
-23877
-Telenor DK"TelenoDK
 
 24001TELIA S"TELIA
 
@@ -540,6 +537,8 @@ SPM AMERIS"AMERIS
 311270Verizon"Verizon
 
 311370GCI"GCI
+
+311450PTCI"PTCI
 
 311480Verizon"Verizon
 
@@ -1320,8 +1319,6 @@ TOT Mobile"TOT
 52503SGP-M1"M1
 
 52505StarHub"StarHub
-"
-52507SGP Call Zone"CallZone
 
 52508StarHub"StarHub
 
@@ -1344,6 +1341,8 @@ TOT Mobile"TOT
 53701bmobile"bmobile
 
 53703DIGICEL"DIGICEL
+ 
+53704PG VODAFONE"VODAFONE
 
 53901U-CALL"U-CALL
 !
@@ -1880,4 +1879,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML%Published TS.25 Database 07 June 2021
+90150EchoStar Mobile"EML%Published TS.25 Database 19 July 2021
