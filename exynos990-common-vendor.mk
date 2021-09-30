@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64 \
-    vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.0-service \
+    vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.1-service \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.configstore@1.0-service \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
+    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.configstore@1.0-service.rc \
@@ -213,7 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libeden_ud_npu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeden_ud_npu.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libeden_xtool.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeden_xtool.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libengmode_client.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libenn_dsp_dal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_dal.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libenn_dsp_fw_graph_parser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_fw_graph_parser.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libenn_dsp_kernels_cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_kernels_cpu.so \
@@ -261,7 +260,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libuniapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniapi.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuuid.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvkmanager_vendor.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libvpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
@@ -286,13 +284,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/soundfx/libmysound.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmysound.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmyspace.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/soundfx/libplaybackrecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libplaybackrecorder.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.camera.device@5.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
+    vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.device@5.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.device@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.device@5.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.channel@2.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio@2.1.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0.so \
@@ -317,6 +314,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
+    vendor/samsung/exynos990-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosHWCService.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Core.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Resourcemanager.so \
@@ -444,13 +442,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/soundfx/libmysound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmysound.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmyspace.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/soundfx/libplaybackrecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libplaybackrecorder.so \
-    vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.camera.device@5.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.audio@1.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
+    vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.device@5.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
+    vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.1.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
     vendor/samsung/exynos990-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.0.so \
