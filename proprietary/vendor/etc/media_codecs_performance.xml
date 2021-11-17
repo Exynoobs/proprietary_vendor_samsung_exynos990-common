@@ -158,7 +158,7 @@
             <Limit name="measured-frame-rate-1920x1080" range="25-50" />
         </MediaCodec>
         <MediaCodec name="c2.sec.mpeg4.decoder" type="video/mp4v-es" update="true" >
-            <Limit name="measured-frame-rate-176x144" range="800-1600" />
+            <Limit name="measured-frame-rate-176x144" range="157-345" />
             <Limit name="measured-frame-rate-480x360" range="550-1100" />
         </MediaCodec>
     </Decoders>

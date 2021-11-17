@@ -537,12 +537,10 @@ SPM AMERIS"AMERIS
 311270Verizon"Verizon
 
 311370GCI"GCI
-
-311450PTCI"PTCI
 
 311480Verizon"Verizon
-
-311530USANW"USANW
+
+311530PTCI"PTCI
 
 311560USA OTZ"OTZ
 
@@ -551,6 +549,8 @@ SPM AMERIS"AMERIS
 311600Limitless Mobile"LMUSA
 
 311630C Spire"C Spire
+$
+311650United Wireless USA"UWC
 
 311660	Metro PCS"MPCS
 $
@@ -1879,4 +1879,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML%Published TS.25 Database 19 July 2021
+90150EchoStar Mobile"EML'Published TS.25 Database 30 August 2021
