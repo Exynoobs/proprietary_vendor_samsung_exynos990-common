@@ -553,8 +553,6 @@ $
 311650United Wireless USA"UWC
 
 311660	Metro PCS"MPCS
-$
-311710Northeast Wireless"NEWN
 
 311740TCI"TCI
 "
@@ -1183,6 +1181,8 @@ $
 45702ETL MOBILE NETWORK"ETLMNW
 
 45703Unitel"UNITEL
+"
+45707Best Telecom Laos"Best
 
 45708TPLUS"TPLUS
 
@@ -1879,4 +1879,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML'Published TS.25 Database 30 August 2021
+90150EchoStar Mobile"EML(Published TS.25 Database 11 October 2021

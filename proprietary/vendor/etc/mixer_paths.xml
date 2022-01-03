@@ -694,6 +694,10 @@
         <ctl name="ABOX AUDIO_DAMPER0_A" value="BD_MIXER" />
     </path>
 
+    <path name="route-bdmixer-to-damper4">
+        <ctl name="ABOX AUDIO_DAMPER4_A" value="BD_MIXER" />
+    </path>
+
     <path name="route-ap-bdmixer-txse">
         <path name="route-bdmixer-to-damper0" />
     </path>
@@ -901,7 +905,7 @@
         <ctl name="ABOX TDM_DEMUX4_A" value="WDMA2" />
     </path>
 
-	<!-- dual-mic wdma2 to Demux3 -->
+    <!-- dual-mic wdma2 to Demux3 -->
     <path name="route-wdma2-to-tdmdemux3">
         <!-- wdma2 to demux3 for dual-mic -->
         <ctl name="ABOX TDM_DEMUX3_A" value="WDMA2" />
@@ -1588,6 +1592,10 @@
         <ctl name="ABOX MCD_A2DP_A" value="AUDIO_DAMPER1" />
     </path>
 
+    <path name="route-damper4-to-a2dpcom">
+        <ctl name="ABOX MCD_A2DP_A" value="AUDIO_DAMPER4" />
+    </path>
+
     <path name="route-wdma3-to-srccom5_a">
         <ctl name="ABOX BD_SRCCOM5_A" value="WDMA3" />
     </path>
@@ -1635,8 +1643,8 @@
         <path name="route-sifs0-to-nsrc3" />
         <path name="route-nsrc3-to-wdma3" />
         <path name="route-wdma3-to-srccom5_a" />
-        <path name="route-bdmixer-to-damper0" />
-        <path name="route-damper0-to-a2dpcom" />
+        <path name="route-bdmixer-to-damper4" />
+        <path name="route-damper4-to-a2dpcom" />
         <path name="route-bdmixer-to-damper1" />
         <path name="route-damper1-to-mcdvm" />
         <path name="route-a2dpcom-to-rdma4" />
@@ -1763,8 +1771,9 @@
         <path name="route-sifs0-to-nsrc3" />
         <path name="route-nsrc3-to-wdma3" />
         <path name="route-wdma3-to-srccom5_a" />
+        <path name="route-bdmixer-to-damper4" />
+        <path name="route-damper4-to-a2dpcom" />
         <path name="route-bdmixer-to-damper0" />
-        <path name="route-damper0-to-a2dpcom" />
         <path name="route-damper0-to-mcdvm" />
         <path name="route-a2dpcom-to-rdma4" />
         <path name="route-rdma4-to-sifs2" />
@@ -1819,8 +1828,9 @@
         <path name="route-sifs0-to-nsrc3" />
         <path name="route-nsrc3-to-wdma3" />
         <path name="route-wdma3-to-srccom5_a" />
+        <path name="route-bdmixer-to-damper4" />
+        <path name="route-damper4-to-a2dpcom" />
         <path name="route-bdmixer-to-damper0" />
-        <path name="route-damper0-to-a2dpcom" />
         <path name="route-damper0-to-mcdvm" />
         <path name="route-a2dpcom-to-rdma4" />
         <path name="route-rdma4-to-sifs2" />
@@ -1855,7 +1865,7 @@
         <path name="route-rdma7-to-sifs1" />
         <path name="route-chconv4ch-to-rdma7" />
         <path name="route-sifs1-to-uaif2" />
-        <path name="route-sifs0-to-nsrc2-bridge" />      
+        <path name="route-sifs0-to-nsrc2-bridge" />
     </path>
 
     <path name="media-dual-speaker-usb-headset">
@@ -2031,7 +2041,7 @@
         <path name="route-vpcmoutdai6-to-srccom6_b" />
         <path name="media-direct-usb-headset" />
     </path>
- 
+
     <!-- Ringtone playback paths -->
     <path name="ringtone-handset">
         <path name="media-handset" />
@@ -2391,7 +2401,7 @@
 
     <path name="incall-usb-headset">
         <ctl name="ABOX Path Change ID" value="12" />
-		<path name="media-usb-headset" />
+        <path name="media-usb-headset" />
         <path name="route-vssrxif-vssbridge-rxse-to-srccom4" />
         <path name="route-vpcmoutdai4-to-srccom4_b" />
         <path name="route-vssbridge-to-callrec_a" />
@@ -2960,13 +2970,15 @@
     <path name="recording-dualmic">
         <path name="dev-dual-invert-mic" />
         <path name="route-seriallif-24bit-to-wdma4" />
-        <path name="route-wdma4-to-tdmdemux0" />
+        <path name="route-wdma4-to-tdmdemux4" />
+        <ctl name="ABOX WDMA4 Auto Fade In" value="1" />
+        <ctl name="ABOX WDMA4 Vol Change" value="1024" />
         <!-- primary stream node -->
-        <path name="route-tdmdemux0-to-vpcmindai0" />
+        <path name="route-tdmdemux4-to-vpcmindai0" />
         <!-- fast stream node -->
-        <path name="route-tdmdemux0-to-vpcmindai1" />
+        <path name="route-tdmdemux4-to-vpcmindai1" />
         <!-- low latency stream node -->
-        <path name="route-tdmdemux0-to-vpcmindai2" />
+        <path name="route-tdmdemux4-to-vpcmindai2" />
     </path>
 
     <path name="recording-headphone-mic">
@@ -3001,7 +3013,15 @@
     </path>
 
     <path name="camcorder-dualmic">
-        <path name="recording-dualmic" />
+        <path name="dev-dual-invert-mic" />
+        <path name="route-seriallif-24bit-to-wdma4" />
+        <path name="route-wdma4-to-tdmdemux4" />
+        <!-- primary stream node -->
+        <path name="route-tdmdemux4-to-vpcmindai0" />
+        <!-- fast stream node -->
+        <path name="route-tdmdemux4-to-vpcmindai1" />
+        <!-- low latency stream node -->
+        <path name="route-tdmdemux4-to-vpcmindai2" />
     </path>
 
     <path name="camcorder-multi-mic">
