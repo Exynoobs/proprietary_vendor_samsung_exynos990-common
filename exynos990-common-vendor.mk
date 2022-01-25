@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
@@ -289,7 +288,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libaudioroute.exynos990 \
     libtinyalsa.exynos990 \
-    android.hardware.secure_element@1.0-impl-gto \
     android.hardware.gnss@2.1-impl \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
@@ -337,7 +335,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \
     android.hardware.neuralnetworks@1.3-service.eden-drv \
-    android.hardware.secure_element@1.0-service \
     gpsd \
     lhd \
     rild \
