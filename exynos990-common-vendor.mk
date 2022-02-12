@@ -284,7 +284,6 @@ PRODUCT_PACKAGES += \
     libaudioproxy \
     libdatamod \
     liblastaboxmsg \
-    liboemcrypto \
     libstagefright_omx_vendor \
     libwvhidl \
     libaudioroute.exynos990 \
