@@ -226,6 +226,7 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libqfp_sensortest \
     libsec_semRil \
+    libsecaudiocoreutils \
     libsecaudioinfo \
     libsecnativefeature \
     libsecril-client.exynos990 \
@@ -286,6 +287,7 @@ PRODUCT_PACKAGES += \
     libaudioproxy \
     libdatamod \
     liblastaboxmsg \
+    libprofileparamstorage \
     libstagefright_omx_vendor \
     libwvhidl \
     libaudioroute.exynos990 \
@@ -320,7 +322,6 @@ PRODUCT_PACKAGES += \
     libnpuc_template \
     libril_sem \
     libsait_npu_compiler \
-    libsecaudiocoreutils \
     libskeymaster4device \
     libvkmanager_vendor \
     vendor.samsung.hardware.audio@1.0 \
