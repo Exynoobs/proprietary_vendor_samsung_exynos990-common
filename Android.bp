@@ -6,106 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "camera.device@1.0-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera.device@1.0-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@1.0-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.2-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera.device@3.2-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.2-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.3-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera.device@3.3-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.3-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.4-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera.device@3.4-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.4-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.5-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera.device@3.5-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/camera.device@3.5-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libGLES_mali",
 	owner: "samsung",
 	strip: {
@@ -222,27 +122,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.camera.provider@4.0-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -2233,86 +2112,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.camera.device@5.0-impl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.camera.device@5.0-impl.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.camera.device@5.0",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.camera.device@5.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.camera.provider@4.0-legacy",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.camera.provider@4.0",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.samsung.hardware.thermal@1.0",
 	owner: "samsung",
 	strip: {
@@ -3524,19 +3323,6 @@ cc_prebuilt_binary {
 	name: "rild",
 	owner: "samsung",
 	srcs: ["proprietary/vendor/bin/hw/rild"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.samsung.hardware.camera.provider@4.0-service_64",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64"],
 	check_elf_files: false,
 	strip: {
 		none: true,

@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -156,18 +155,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-impl \
     libGLES_mali \
     gatekeeper.exynos990 \
     gralloc.exynos990 \
     hwcomposer.exynos990 \
     memtrack.exynos990 \
     vendor.samsung.hardware.audio@1.0-impl \
-    vendor.samsung.hardware.camera.provider@4.0-impl \
     vulkan.mali \
     libExynosHWCService \
     libExynosOMX_Core \
@@ -266,10 +259,6 @@ PRODUCT_PACKAGES += \
     libmyspace \
     libplaybackrecorder \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
-    vendor.samsung.hardware.camera.device@5.0-impl \
-    vendor.samsung.hardware.camera.device@5.0 \
-    vendor.samsung.hardware.camera.provider@4.0-legacy \
-    vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
@@ -343,7 +332,6 @@ PRODUCT_PACKAGES += \
     gpsd \
     lhd \
     rild \
-    vendor.samsung.hardware.camera.provider@4.0-service_64 \
     vendor.samsung.hardware.gnss@2.1-service \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
     tzdaemon \
