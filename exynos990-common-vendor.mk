@@ -264,7 +264,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
     vendor.samsung_slsi.hardware.eden_runtime@1.0 \
     audio.primary.exynos990 \
-    sound_trigger.primary.exynos990 \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_08020 \
     lib_SoundAlive_SRC384_ver320 \
