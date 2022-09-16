@@ -9,6 +9,7 @@
 
 on post-fs-data
     mkdir /data/vendor/secradio 0770 radio radio
+    restorecon -R /data/vendor/secradio
 
 on property:ro.vendor.multisim.simslotcount=1
     stop ril-daemon1
@@ -30,4 +31,3 @@ on fs
 
 on post-fs-data
     exec_start network_config
-    setprop ro.telephony.default_network ${ro.vendor.radio.default_network}
