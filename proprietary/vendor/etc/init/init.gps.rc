@@ -45,3 +45,7 @@ service gpsd /vendor/bin/hw/gps.sh
     ioprio be 0
     seclabel u:r:gpsd:s0
 
+
+on property:ro.product.name=gsi_arm64
+    mkdir /data/vendor/gps/GSI
+    restart gpsd

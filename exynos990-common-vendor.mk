@@ -8,7 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/product/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/gps.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gps.sh \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    vendor/samsung/exynos990-common/proprietary/vendor/etc/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service.rc \
+    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
@@ -139,7 +139,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-0050524f4341:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-0050524f4341 \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-00535453540c:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00535453540c \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-00575644524d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00575644524d \
-    vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-446e6c6f6164:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-446e6c6f6164 \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-53454d655345:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-53454d655345 \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-5354494d4552:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-5354494d4552 \
     vendor/samsung/exynos990-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
@@ -215,7 +214,6 @@ PRODUCT_PACKAGES += \
     libhwjpeg \
     libhwjsqz \
     libion_exynos \
-    libmdf \
     libmpbase \
     libqfp_sensortest \
     libsec_semRil \
@@ -223,7 +221,6 @@ PRODUCT_PACKAGES += \
     libsecaudioinfo \
     libsecnativefeature \
     libsecril-client.exynos990 \
-    libsecure_storage \
     libsemnativecarrierfeature \
     libsensorlistener \
     libstagefrighthw \
@@ -276,14 +273,17 @@ PRODUCT_PACKAGES += \
     libdatamod \
     liblastaboxmsg \
     libprofileparamstorage \
+    libspatializerparamstorage \
     libstagefright_omx_vendor \
     libwvhidl \
     libaudioroute.exynos990 \
     libtinyalsa.exynos990 \
-    android.hardware.secure_element@1.0-impl-gto \
+    android.hardware.secure_element-impl-gto \
     android.hardware.gnss@2.1-impl \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
+    libSemDataProps \
+    libSemTelephonyProps \
     libcommon \
     libcrane_compiler \
     libeden_wrapper \
@@ -327,7 +327,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \
     android.hardware.neuralnetworks@1.3-service.eden-drv \
-    android.hardware.secure_element@1.0-service \
+    android.hardware.secure_element@1.2-service \
     gpsd \
     lhd \
     rild \
