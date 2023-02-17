@@ -156,14 +156,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     gatekeeper.exynos990 \
-    gralloc.exynos990 \
-    hwcomposer.exynos990 \
-    memtrack.exynos990 \
     vendor.samsung.hardware.audio@1.0-impl \
     vulkan.mali \
-    libExynosHWCService \
-    libExynosOMX_Core \
-    libExynosOMX_Resourcemanager \
     libGrallocMapperCamera \
     libIDDQD_core \
     libIDDQD_interface \
@@ -174,12 +168,10 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver400 \
     libacryl.plugin.hdr.exynos990 \
-    libacryl \
     libaudioparamupdate \
     libbauthserver \
     libbauthtzcommon \
     libbayergdccore \
-    libcsc \
     libeden_model \
     libeden_nn \
     libeden_nn_on_vendor \
@@ -201,19 +193,11 @@ PRODUCT_PACKAGES += \
     libexynoscamera_fakefusion_plugin \
     libexynoscamera_plugin \
     libexynoscamera_plugin_utils \
-    libexynosdisplay \
     libexynosgraphicbuffer \
-    libexynosgscaler \
-    libexynosscaler \
-    libexynosutils \
-    libexynosv4l2 \
     libfloatingfeature \
     libgf_in_system_lib \
-    libgiantmscl \
     libhdr10p_m2l.exynos990 \
-    libhwjpeg \
     libhwjsqz \
-    libion_exynos \
     libmpbase \
     libqfp_sensortest \
     libril-samsung \
@@ -224,7 +208,6 @@ PRODUCT_PACKAGES += \
     libsecril-client.exynos990 \
     libsemnativecarrierfeature \
     libsensorlistener \
-    libstagefrighthw \
     libsynaFpSensorTestNwd \
     libteecl \
     libtriplecam_image_optical_zoom \
@@ -235,19 +218,6 @@ PRODUCT_PACKAGES += \
     libuniplugin \
     libuuid \
     libvpl \
-    libOMX.Exynos.AVC.Decoder \
-    libOMX.Exynos.AVC.Encoder \
-    libOMX.Exynos.AVC.WFD.Encoder \
-    libOMX.Exynos.HEVC.Decoder \
-    libOMX.Exynos.HEVC.Encoder \
-    libOMX.Exynos.HEVC.WFD.Encoder \
-    libOMX.Exynos.MPEG4.Decoder \
-    libOMX.Exynos.MPEG4.Encoder \
-    libOMX.Exynos.VP8.Decoder \
-    libOMX.Exynos.VP8.Encoder \
-    libOMX.Exynos.VP9.Decoder \
-    libOMX.Exynos.VP9.Encoder \
-    libOMX.Exynos.WMV.Decoder \
     sensors.flicker \
     sensors.grip \
     sensors.sensorhub \
@@ -275,7 +245,6 @@ PRODUCT_PACKAGES += \
     liblastaboxmsg \
     libprofileparamstorage \
     libspatializerparamstorage \
-    libstagefright_omx_vendor \
     libwvhidl \
     libaudioroute.exynos990 \
     libtinyalsa.exynos990 \
