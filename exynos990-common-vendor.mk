@@ -6,49 +6,22 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/exynos990-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/exynos990-common/proprietary/product/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     vendor/samsung/exynos990-common/proprietary/vendor/bin/hw/gps.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gps.sh \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/eden/gpu/eden_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/eden/gpu/eden_kernel_64.bin \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0_strongbox-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.eden_runtime@1.0-service.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/sensor/lhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor/lhd.conf \
-    vendor/samsung/exynos990-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/exynos990-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/exynos990-common/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
     vendor/samsung/exynos990-common/proprietary/vendor/firmware/NPU_NFD_P4.7.tflite:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU_NFD_P4.7.tflite \
@@ -153,23 +126,46 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    gatekeeper.exynos990 \
-    vendor.samsung.hardware.audio@1.0-impl \
     vulkan.mali \
-    libGrallocMapperCamera \
-    libIDDQD_core \
-    libIDDQD_interface \
-    libLocalTM_preview_core \
-    libOpenCv.camera.samsung \
-    libSEF.quram \
-    lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
-    lib_SoundAlive_play_plus_ver400 \
-    libacryl.plugin.hdr.exynos990 \
+    libfloatingfeature \
+    libsecnativefeature \
+    libsecril-client.exynos990 \
+    audio.primary.exynos990 \
+    vendor.samsung.hardware.audio@1.0-impl \
+    libSamsungPostProcessConvertor \
+    lib_SamsungRec_08020 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_lvacfs \
+    lib_soundaliveresampler \
+    libaboxpcmdump \
+    libalsautils_sec \
+    libaudio-ril \
     libaudioparamupdate \
+    libaudioproxy \
+    libdatamod \
+    liblastaboxmsg \
+    libprofileparamstorage \
+    libsecaudiocoreutils \
+    libsecaudioinfo \
+    libspatializerparamstorage \
+    libwvhidl \
+    libaudioeffectoffload \
+    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
+    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
+    libaudioroute.exynos990 \
+    libtinyalsa.exynos990 \
+    android.hardware.secure_element-impl-gto \
+    android.hardware.gnss@2.1-impl \
+    gatekeeper.exynos990 \
+    gps.default \
+    vendor.samsung.hardware.gnss@2.1-impl \
+    libGrallocMapperCamera \
+    libSEF.quram \
     libbauthserver \
     libbauthtzcommon \
     libbayergdccore \
+    libcommon \
+    libcrane_compiler \
     libeden_model \
     libeden_nn \
     libeden_nn_on_vendor \
@@ -181,80 +177,19 @@ PRODUCT_PACKAGES += \
     libeden_ud_dsp \
     libeden_ud_gpu \
     libeden_ud_npu \
+    libeden_wrapper \
+    libeden_wrapper_sdk \
     libeden_xtool \
     libegis_fp_normal_sensor_test \
+    libengmode_client \
     libenn_dsp_dal \
     libenn_dsp_fw_graph_parser \
     libenn_dsp_kernels_cpu \
-    libepic_helper \
     libexynoscamera_fakefusion \
     libexynoscamera_fakefusion_plugin \
     libexynoscamera_plugin \
     libexynoscamera_plugin_utils \
-    libexynosgraphicbuffer \
-    libfloatingfeature \
     libgf_in_system_lib \
-    libhdr10p_m2l.exynos990 \
-    libhwjsqz \
-    libmpbase \
-    libqfp_sensortest \
-    libril-samsung \
-    libsec_semRil \
-    libsecaudiocoreutils \
-    libsecaudioinfo \
-    libsecnativefeature \
-    libsecril-client.exynos990 \
-    libsemnativecarrierfeature \
-    libsensorlistener \
-    libsynaFpSensorTestNwd \
-    libteecl \
-    libtriplecam_image_optical_zoom \
-    libtriplecam_video_optical_zoom \
-    libtriplecapture_interface \
-    libtriplepreview_interface \
-    libuniapi \
-    libuniplugin \
-    libuuid \
-    libvpl \
-    sensors.flicker \
-    sensors.grip \
-    sensors.sensorhub \
-    libaudioeffectoffload \
-    libaudiosaplus_sec \
-    libmysound \
-    libmyspace \
-    libplaybackrecorder \
-    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
-    vendor.samsung.hardware.thermal@1.0 \
-    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0 \
-    vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
-    vendor.samsung_slsi.hardware.eden_runtime@1.0 \
-    audio.primary.exynos990 \
-    libSamsungPostProcessConvertor \
-    lib_SamsungRec_08020 \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_lvacfs \
-    lib_soundaliveresampler \
-    libaboxpcmdump \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudioproxy \
-    libdatamod \
-    liblastaboxmsg \
-    libprofileparamstorage \
-    libspatializerparamstorage \
-    libwvhidl \
-    libaudioroute.exynos990 \
-    libtinyalsa.exynos990 \
-    android.hardware.secure_element-impl-gto \
-    android.hardware.gnss@2.1-impl \
-    gps.default \
-    vendor.samsung.hardware.gnss@2.1-impl \
-    libcommon \
-    libcrane_compiler \
-    libeden_wrapper \
-    libeden_wrapper_sdk \
-    libengmode_client \
     libgraphgen_ann_import \
     libgraphgen_ann_nnc \
     libgraphgen_api \
@@ -263,6 +198,7 @@ PRODUCT_PACKAGES += \
     libgraphgen_intermediate_process \
     libgraphgen_misc \
     libgraphgen_network \
+    libhwjsqz \
     libir \
     libkeymaster_helper \
     libnpu_compiler \
@@ -274,17 +210,32 @@ PRODUCT_PACKAGES += \
     libnpuc_frontend \
     libnpuc_graph \
     libnpuc_template \
+    libqfp_sensortest \
+    libril-samsung \
     libsait_npu_compiler \
+    libsec_semRil \
+    libsemnativecarrierfeature \
+    libsensorlistener \
     libskeymaster4device \
+    libsynaFpSensorTestNwd \
+    libteecl \
+    libuniapi \
+    libuniplugin \
+    libuuid \
     libvkmanager_vendor \
-    vendor.samsung.hardware.audio@1.0 \
+    libvpl \
+    sensors.flicker \
+    sensors.grip \
+    sensors.sensorhub \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.channel@2.0 \
     vendor.samsung.hardware.radio@2.0 \
     vendor.samsung.hardware.radio@2.1 \
-    libaptX_encoder \
+    vendor.samsung.hardware.thermal@1.0 \
+    vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
+    vendor.samsung_slsi.hardware.eden_runtime@1.0 \
     manifest_android.hardware.drm@1.3-service.widevine \
     cbd \
     android.hardware.drm@1.3-service.widevine \
